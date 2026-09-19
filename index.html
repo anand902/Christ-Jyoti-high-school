@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>christ jyoti high School - Complete System</title>
-    <meta nameescription" content="christ jyoti high School - Complete Management System" />
+    <title>School Management System - Complete System</title>
+    <meta name="description" content="School Management System - Complete Management System" />
     <meta name="theme-color" content="#2563EB" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -10123,8 +10123,6 @@ function findAlignmentPattern(matrix, alignmentPatternQuads, topRight, topLeft, 
 /******/ ])["default"];
 });
     </script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
     
     <style>
         :root {
@@ -11593,8 +11591,8 @@ function findAlignmentPattern(matrix, alignmentPatternQuads, topRight, topLeft, 
 <body>
 
 <div id="bootOverlay" style="position:fixed;inset:0;background:#F8FAFC;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Inter',sans-serif;color:#64748B;">
-    <div style="font-size:22px;font-weight:700;color:#2563EB;margin-bottom:8px;">SFAS School</div>
-    <div id="bootOverlayMsg" style="font-size:13px;">Loading data from cloud…</div>
+    <div id="bootOverlayTitle" style="font-size:22px;font-weight:700;color:#2563EB;margin-bottom:8px;">Demo School</div>
+    <div id="bootOverlayMsg" style="font-size:13px;">Loading demo data…</div>
 </div>
 
 <!-- ===== LOGIN PAGE ===== -->
@@ -11992,7 +11990,7 @@ function findAlignmentPattern(matrix, alignmentPatternQuads, topRight, topLeft, 
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <div class="sidebar-logo">✝️</div>
-            <div class="sidebar-brand">St. Francis<small>OF ASSISI SCHOOL</small></div>
+            <div class="sidebar-brand">Your School<small>MANAGEMENT SYSTEM</small></div>
             <button class="sidebar-toggle-btn" onclick="toggleSidebar()">☰</button>
         </div>
         <nav class="sidebar-nav" id="sidebarNav"></nav>
@@ -13049,13 +13047,13 @@ function findAlignmentPattern(matrix, alignmentPatternQuads, topRight, topLeft, 
                             <div class="settings-preview-card">
                                 <div class="preview-crest" id="previewCrest">✝️</div>
                                 <div class="preview-logo-img" id="previewLogoImg" style="display:none;width:80px;height:80px;border-radius:50%;margin:0 auto 8px;background-size:cover;background-position:center;"></div>
-                                <div class="preview-name" id="previewName">St. Francis of Assisi School</div>
+                                <div class="preview-name" id="previewName">Demo School</div>
                                 <div class="preview-tagline" id="previewTagline">"Pax et Bonum" - Peace and Goodness</div>
                                 <div class="preview-meta">
                                     <span id="previewYear">📅 2026-2027</span>
                                     <span id="previewAddress">📍 123 Education Lane</span>
                                     <span id="previewPhone">📞 +91-9876543210</span>
-                                    <span id="previewEmail">✉️ info@stfrancis.edu</span>
+                                    <span id="previewEmail">✉️ info@yourschool.edu</span>
                                 </div>
                             </div>
                         </div>
@@ -13097,24 +13095,24 @@ function findAlignmentPattern(matrix, alignmentPatternQuads, topRight, topLeft, 
                     <div class="stat-card"><div class="stat-number" id="saHomework">0</div><div class="stat-label">📝 Homework</div></div>
                     <div class="stat-card"><div class="stat-number" id="saNotices">0</div><div class="stat-label">📢 Notices</div></div>
                 </div>
-                <h3 style="margin:4px 0 8px;font-size:13px;color:var(--text-secondary);">☁️ Firebase Storage (Total Data Stored)</h3>
+                <h3 style="margin:4px 0 8px;font-size:13px;color:var(--text-secondary);">💾 Local Storage (Demo Data)</h3>
                 <div class="charts-grid">
                     <div class="table-card" style="padding:18px;display:flex;align-items:center;justify-content:center;">
                         <div class="storage-ring" id="cloudStorageRing">
                             <div class="storage-ring-center">
                                 <div class="storage-ring-value" id="saCloudStorageSize">0 B</div>
-                                <div class="storage-ring-label">Total Data in Firebase</div>
+                                <div class="storage-ring-label">Stored on this device</div>
                             </div>
                         </div>
                     </div>
                     <div class="table-card" style="padding:18px;">
-                        <h3 style="margin-bottom:10px;">☁️ Cloud Details</h3>
-                        <div class="sa-status-row"><span>🔥 Firebase</span><strong id="saFirebaseStatus">—</strong></div>
-                        <div class="sa-status-row"><span>🗄️ Firestore Database</span><strong id="saFirestoreStatus">—</strong></div>
+                        <h3 style="margin-bottom:10px;">💾 Storage Details</h3>
+                        <div class="sa-status-row"><span>📦 Data Mode</span><strong id="saFirebaseStatus">—</strong></div>
+                        <div class="sa-status-row"><span>🗄️ Database</span><strong id="saFirestoreStatus">—</strong></div>
                         <div class="sa-status-row"><span>📦 Documents</span><strong id="saCloudDocs">0</strong></div>
                         <div class="sa-status-row"><span>🏫 Schools with data</span><strong id="saCloudSchools">0</strong></div>
                         <div class="sa-status-row"><span>💾 Last Backup</span><strong id="saCloudLastBackup">—</strong></div>
-                        <div class="sa-status-row"><span>🔌 Cloud Sync</span><strong id="saCloudStatus">—</strong></div>
+                        <div class="sa-status-row"><span>🔌 Sync</span><strong id="saCloudStatus">—</strong></div>
                         <div class="sa-status-row"><span>💾 Data Saved In</span><strong id="saDataLocation" style="text-align:right;">—</strong></div>
                     </div>
                 </div>
@@ -13154,7 +13152,7 @@ function findAlignmentPattern(matrix, alignmentPatternQuads, topRight, topLeft, 
                             <div class="form-grid">
                                 <div class="form-group"><label>Principal Name</label><input type="text" class="form-input" id="saPrincipalName" placeholder="Fr. Michael Rodrigues" /></div>
                                 <div class="form-group"><label>Current ID</label><input type="email" class="form-input" id="saPrincipalCurrent" readonly style="background:var(--bg);" /></div>
-                                <div class="form-group"><label>New ID (Email)</label><input type="email" class="form-input" id="saPrincipalNewId" placeholder="principal@stfrancis.edu" /></div>
+                                <div class="form-group"><label>New ID (Email)</label><input type="email" class="form-input" id="saPrincipalNewId" placeholder="principal@yourschool.edu" /></div>
                                 <div class="form-group"><label>New Password</label><input type="text" class="form-input" id="saPrincipalNewPwd" placeholder="Min 6 characters" /></div>
                             </div>
                             <button type="button" class="btn btn-gold" onclick="saveRoleCreds('principal')">💾 Update Principal</button>
@@ -13164,7 +13162,7 @@ function findAlignmentPattern(matrix, alignmentPatternQuads, topRight, topLeft, 
                             <div class="form-grid">
                                 <div class="form-group"><label>Accountant Name</label><input type="text" class="form-input" id="saAccountantName" placeholder="Mr. Thomas Matthew" /></div>
                                 <div class="form-group"><label>Current ID</label><input type="email" class="form-input" id="saAccountantCurrent" readonly style="background:var(--bg);" /></div>
-                                <div class="form-group"><label>New ID (Email) *</label><input type="email" class="form-input" id="saAccountantNewId" placeholder="accounts@stfrancis.edu" /></div>
+                                <div class="form-group"><label>New ID (Email) *</label><input type="email" class="form-input" id="saAccountantNewId" placeholder="accounts@yourschool.edu" /></div>
                                 <div class="form-group"><label>New Password *</label><input type="text" class="form-input" id="saAccountantNewPwd" placeholder="Min 6 characters" /></div>
                             </div>
                             <button type="button" class="btn btn-purple" onclick="saveRoleCreds('accountant')">💾 Update Accountant</button>
@@ -13173,7 +13171,7 @@ function findAlignmentPattern(matrix, alignmentPatternQuads, topRight, topLeft, 
                             <h3 class="form-section-title">🛡️ Admin Login</h3>
                             <div class="form-grid">
                                 <div class="form-group"><label>Current ID</label><input type="email" class="form-input" id="saSuperCurrent" readonly style="background:var(--bg);" /></div>
-                                <div class="form-group"><label>New ID (Email) *</label><input type="email" class="form-input" id="saSuperNewId" placeholder="superadmin@stfrancis.edu" /></div>
+                                <div class="form-group"><label>New ID (Email) *</label><input type="email" class="form-input" id="saSuperNewId" placeholder="superadmin@yourschool.edu" /></div>
                                 <div class="form-group"><label>New Password *</label><input type="text" class="form-input" id="saSuperNewPwd" placeholder="Min 6 characters" /></div>
                             </div>
                             <button type="button" class="btn btn-dark" onclick="saveRoleCreds('superadmin')">💾 Update Admin</button>
@@ -13198,30 +13196,12 @@ function findAlignmentPattern(matrix, alignmentPatternQuads, topRight, topLeft, 
                         <button class="btn btn-gold" onclick="document.getElementById('importDataInput').click()"><i class="fas fa-upload"></i> Restore Backup</button>
                     </div>
                     <div class="form-section">
-                        <h3 class="form-section-title">☁️ Firebase Backup</h3>
-                        <p style="font-size:12px;color:var(--text-secondary);margin-bottom:12px;">Upload the full database to Firebase as a backup, or download &amp; restore the last backup stored in Firebase.</p>
-                        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                            <button class="btn btn-primary" onclick="uploadFirebaseBackup()">☁️ Upload Backup to Firebase</button>
-                            <button class="btn btn-gold" onclick="downloadFirebaseBackup()">☁️ Download Backup from Firebase</button>
-                        </div>
-                        <div class="server-status-row" id="firebaseBackupStatusRow" style="display:none;">
-                            <span class="status-light" id="firebaseBackupStatusLight"></span>
-                            <span id="firebaseBackupStatusText" style="font-size:12px;color:var(--text-secondary);"></span>
-                        </div>
-                    </div>
-                    <div class="form-section">
                         <h3 class="form-section-title">🧹 Reset Data</h3>
                         <p style="font-size:12px;color:var(--text-secondary);margin-bottom:12px;">Clear all data for the current school or erase everything.</p>
                         <div style="display:flex;gap:10px;flex-wrap:wrap;">
                             <button class="btn btn-dark" onclick="resetAllData()">🔄 Reset School Data</button>
                             <button class="btn btn-danger" onclick="clearAllData()">🗑️ Clear All Data</button>
                         </div>
-                    </div>
-                    <div class="form-section">
-                        <h3 class="form-section-title">🔍 Cloud Diagnostic</h3>
-                        <p style="font-size:12px;color:var(--text-secondary);margin-bottom:12px;">Check what this browser can read/write in Firestore and what it currently has in memory.</p>
-                        <button class="btn btn-primary" onclick="runCloudDiagnostic()"><i class="fas fa-stethoscope"></i> Run Diagnostic</button>
-                        <pre id="cloudDiagOutput" style="display:none;margin-top:10px;background:var(--bg-main,#111);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:10px;font-size:11px;line-height:1.5;white-space:pre-wrap;max-height:300px;overflow:auto;"></pre>
                     </div>
                 </div>
             </div>
@@ -13277,7 +13257,7 @@ function findAlignmentPattern(matrix, alignmentPatternQuads, topRight, topLeft, 
                     <div class="form-section">
                         <h3 class="form-section-title">➕ Add New School</h3>
                         <div class="form-grid" style="grid-template-columns:2fr 1fr 1fr auto;">
-                            <div class="form-group"><label>School Name *</label><input type="text" class="form-input" id="newSchoolName" placeholder="e.g. St. Francis of Assisi School" /></div>
+                            <div class="form-group"><label>School Name *</label><input type="text" class="form-input" id="newSchoolName" placeholder="e.g. Demo School" /></div>
                             <div class="form-group"><label>Tagline</label><input type="text" class="form-input" id="newSchoolTagline" placeholder='e.g. "Pax et Bonum" - Peace and Goodness' /></div>
                             <div class="form-group"><label>Domain</label><input type="text" class="form-input" id="newSchoolDomain" placeholder="e.g. school.example.com" /></div>
                             <div style="display:flex;align-items:flex-end;padding-bottom:4px;"><button type="button" class="btn btn-primary" onclick="addSchool()">➕ Add School</button></div>
@@ -13432,6 +13412,16 @@ const FIREBASE_CONFIG = {
 };
 
 const FIREBASE_SDK_VERSION = '10.12.0';
+
+// ---------------------------------------------------------------------------
+// DEMO BUILD — OFFLINE / LOCAL STORAGE
+// This demo does NOT use Firebase at all. All data is saved in the browser's
+// localStorage under the "demoStore::" prefix, so it works without internet and
+// never touches the real school data. A realistic demo school (teachers,
+// students, attendance, marks, homework, reports, fees, notices) is seeded on
+// first run by seedDemoData(). Use Super Admin → Data Management → Reset School
+// Data to restore the demo data.
+// ---------------------------------------------------------------------------
 const CLOUD_KEYS = [
     'sfaStudents', 'sfaTeachers', 'sfaFees', 'sfaTeacherAttendance', 'sfaStudentAttendance',
     'sfaQRCodes', 'sfaNotices', 'sfaMarks', 'sfaAdmissionFees', 'sfaReAdmissionFees',
@@ -13496,45 +13486,24 @@ let cloudOnline = (typeof navigator !== 'undefined' ? navigator.onLine !== false
 let cloudPullDone = false;   // initial pull finished (blocks default-seed writes from clobbering cloud)
 
 function loadFirebaseSDK(cb) {
-    let pending = 2;
-    function done() { if (--pending <= 0) { if (cb) cb(); } }
-    function inject(src) {
-        if (document.getElementById('fb-sdk-' + src)) { done(); return; }
-        const s = document.createElement('script');
-        s.id = 'fb-sdk-' + src;
-        s.src = 'https://www.gstatic.com/firebasejs/' + FIREBASE_SDK_VERSION + '/' + src;
-        s.onload = done;
-        s.onerror = done;
-        document.head.appendChild(s);
-    }
-    inject('firebase-app-compat.js');
-    inject('firebase-firestore-compat.js');
+    // Demo build: Firebase is disabled. Everything runs on local storage.
+    if (typeof cb === 'function') cb();
 }
 
 function initFirebase() {
-    try {
-        if (!window.firebase || typeof window.firebase.initializeApp !== 'function') return;
-        firebaseApp = window.firebase.initializeApp(FIREBASE_CONFIG, 'sfas');
-        firestoreDb = window.firebase.firestore(firebaseApp);
-        cloudAvailable = true;
-        console.log('Firebase initialized:', FIREBASE_CONFIG.projectId);
-    } catch (e) {
-        console.warn('Firebase init failed:', e);
-        cloudAvailable = false;
-    }
+    firestoreDb = null;
+    cloudAvailable = false;
 }
 
 function cloudEnabled() {
-    return cloudAvailable && cloudOnline && cloudPullDone && !!firestoreDb;
+    return false;
 }
 
 function cloudDocRef(key) {
-    const sid = getCurrentSchoolId();
-    return firestoreDb.collection('schools').doc(sid).collection('data').doc(aliasCloudKey(key));
+    return null;
 }
 
-// Global (platform-level) keys are stored in a shared Firestore collection so they
-// live on the server, not in the browser. Local caching is in-memory only.
+// Platform-level keys are stored in localStorage in this demo build.
 const PLATFORM_DOC_MAP = {
     'sfaSchoolRegistry': 'registry',
     'sfaSuperAdminAuth': 'superadmin',
@@ -13543,78 +13512,23 @@ const PLATFORM_DOC_MAP = {
 };
 
 function platformDocRef(key) {
-    const docId = PLATFORM_DOC_MAP[key];
-    if (!docId) return null;
-    return firestoreDb.collection('_platform').doc(docId);
+    return null;
 }
 
 function platformWrite(key, data) {
-    if (!cloudAvailable || !firestoreDb) return;
-    const ref = platformDocRef(key);
-    if (!ref) return;
-    ref.set(
-        { data: data, updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() },
-        { merge: true }
-    ).catch(function (e) {
-        console.warn('Firestore platform write failed for', key, e);
-    });
+    demoLocalSet(Storage.scope(key), data);
 }
 
 async function loadPlatformData() {
-    if (!cloudAvailable || !firestoreDb) return false;
-    let loaded = false;
-    try {
-        const snap = await firestoreDb.collection('_platform').get();
-        snap.forEach(function (doc) {
-            const d = doc.data();
-            if (!d || d.data === undefined) return;
-            const key = Object.keys(PLATFORM_DOC_MAP).find(k => PLATFORM_DOC_MAP[k] === doc.id);
-            if (!key) return;
-            memCache[key] = d.data;
-            loaded = true;
-        });
-        if (memCache['sfaCurrentSchoolId']) {
-            const reg = memCache['sfaSchoolRegistry'];
-            if (!Array.isArray(reg) || !reg.some(s => s && s.id === memCache['sfaCurrentSchoolId'])) {
-                delete memCache['sfaCurrentSchoolId'];
-            }
-        }
-    } catch (e) {
-        console.warn('Firestore platform pull failed:', e);
-    }
-    return loaded;
+    return false;
 }
 
 function cloudWrite(key, data) {
-    if (GLOBAL_KEYS.includes(key)) {
-        if (PLATFORM_DOC_MAP[key]) platformWrite(key, data);
-        return;
-    }
-    if (!cloudEnabled()) { setCloudStatus(); return; }
-    cloudDocRef(key).set(
-        { data: data, updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() },
-        { merge: true }
-    ).catch(function (e) {
-        console.warn('Firestore write failed for', key, e);
-        try { showToast('⚠️ Could not save "' + key + '" — check your connection.', 'warning'); } catch (err) {}
-    });
+    demoLocalSet(Storage.scope(key), data);
 }
 
 function cloudRemove(key) {
-    if (GLOBAL_KEYS.includes(key)) {
-        if (PLATFORM_DOC_MAP[key]) {
-            if (cloudAvailable && firestoreDb) {
-                const ref = platformDocRef(key);
-                if (ref) ref.delete().catch(function (e) { console.warn('platform delete failed', key, e); });
-            }
-        }
-        return;
-    }
-    if (!cloudEnabled()) { setCloudStatus(); return; }
-    cloudDocRef(key).delete().catch(function (e) {
-        console.warn('Firestore delete failed for', key, e);
-        try { showToast('⚠️ Could not delete "' + key + '" — check your connection.', 'warning'); } catch (err) {}
-    });
+    demoLocalDel(Storage.scope(key));
 }
 
 function setCloudStatus() {
@@ -13624,122 +13538,38 @@ function setCloudStatus() {
     const text = document.getElementById('headerCloudStatusText');
     if (!row || !light || !text) return;
     row.style.display = 'flex';
-    if (!cloudAvailable) {
-        light.className = 'status-light red';
-        text.textContent = 'Cloud offline';
-    } else if (cloudEnabled()) {
-        light.className = 'status-light green';
-        text.textContent = 'Synced';
-    } else if (cloudOnline) {
-        light.className = 'status-light yellow';
-        text.textContent = 'Syncing…';
-    } else {
-        light.className = 'status-light red';
-        text.textContent = 'Offline';
-    }
+    light.className = 'status-light green';
+    text.textContent = 'Saved locally';
 }
 
 function updateSaCloudStatus() {
     const fb = document.getElementById('saFirebaseStatus');
     const db = document.getElementById('saFirestoreStatus');
     const loc = document.getElementById('saDataLocation');
-    if (!fb && !db && !loc) return;
-    const proj = FIREBASE_CONFIG ? FIREBASE_CONFIG.projectId : '';
-    if (fb) {
-        fb.textContent = cloudAvailable
-            ? '🟢 Connected (' + proj + ')'
-            : '🔴 Not connected';
-    }
-    if (db) {
-        db.textContent = cloudAvailable && firestoreDb
-            ? '🟢 Connected'
-            : '🔴 Not connected';
-    }
-    if (loc) {
-        loc.innerHTML = cloudAvailable && firestoreDb
-            ? '☁️ Firestore: <code style="font-size:10px;">schools/' + escapeHtml(getCurrentSchoolId()) + '/data</code>'
-            : '☁️ Firebase (cloud)';
-    }
+    if (fb) fb.textContent = '🟢 Local (offline demo)';
+    if (db) db.textContent = '💾 Browser storage';
+    if (loc) loc.innerHTML = '💾 This device: <code style="font-size:10px;">localStorage</code>';
 }
 
 function syncFromCloud() {
-    if (!cloudAvailable || !firestoreDb) { setCloudStatus(); return; }
-    const sid = getCurrentSchoolId();
-    try {
-        firestoreDb.collection('schools').doc(sid).collection('data').get()
-            .then(async function (snap) {
-                let changed = false;
-                let applied = 0;
-                snap.forEach(function (doc) {
-                    const canonical = unaliasCloudKey(doc.id);
-                    if (GLOBAL_KEYS.includes(canonical) || !CLOUD_KEYS.includes(canonical)) return;
-                    const d = doc.data();
-                    if (!d || d.data === undefined) return;
-                    const cacheKey = Storage.scope(canonical);
-                    const existingRaw = Object.prototype.hasOwnProperty.call(memCache, cacheKey)
-                        ? JSON.stringify(memCache[cacheKey])
-                        : null;
-                    const raw = JSON.stringify(d.data);
-                    if (existingRaw !== raw) {
-                        memCache[cacheKey] = d.data;
-                        changed = true;
-                        applied++;
-                    }
-                });
-                const platformChanged = await loadPlatformData();
-                cloudPullDone = true;
-                setCloudStatus();
-                finishBoot();
-                if (changed || platformChanged) {
-                    console.log('Cloud sync: pulled', applied, 'key(s) from cloud');
-                    try { refreshStateFromCache(); } catch (e) { console.warn('refreshStateFromCache error:', e); }
-                    try { refreshCurrentPageData(); } catch (e) { console.warn('refreshCurrentPageData error:', e); }
-                    try { showToast('☁️ Data synced from cloud', 'success'); } catch (e) {}
-                } else {
-                    console.log('Cloud sync: up to date');
-                }
-            })
-            .catch(function (e) {
-                console.warn('Cloud pull failed:', e);
-                cloudPullDone = true;
-                setCloudStatus();
-                finishBoot();
-            });
-    } catch (e) {
-        console.warn('Cloud pull error:', e);
-        cloudPullDone = true;
-        setCloudStatus();
-        finishBoot();
-    }
+    cloudPullDone = true;
+    setCloudStatus();
+    finishBoot();
 }
 
 function kickOffCloud() {
-    initFirebase();
-    if (!cloudAvailable && cloudOnline) {
-        loadFirebaseSDK(function () { initFirebase(); syncFromCloud(); });
-    }
-    if (cloudAvailable) syncFromCloud();
+    cloudOnline = false;
+    syncFromCloud();
 }
 
-window.addEventListener('online', function () {
-    cloudOnline = true;
-    if (!cloudAvailable) {
-        loadFirebaseSDK(function () { initFirebase(); syncFromCloud(); });
-    } else {
-        syncFromCloud();
-    }
-    setCloudStatus();
-});
-window.addEventListener('offline', function () {
-    cloudOnline = false;
-    setCloudStatus();
-});
+window.addEventListener('online', function () { setCloudStatus(); });
+window.addEventListener('offline', function () { setCloudStatus(); });
 
 // ============================================================================
 // FIREBASE BACKUP & STORAGE USAGE
 // ============================================================================
 
-const FIREBASE_BACKUP_COLLECTION = 'backups';
+const FIREBASE_BACKUP_COLLECTION = 'demo_backups';
 const FIREBASE_BACKUP_DOC = 'platform';
 const FIREBASE_BACKUP_CHUNK_SIZE = 400 * 1024; // keep chunks well under Firestore's 1 MiB doc limit
 
@@ -13770,7 +13600,7 @@ async function computeCloudStorageSize() {
     for (const s of reg) {
         if (!s || !s.id) continue;
         try {
-            const snap = await firestoreDb.collection('schools').doc(s.id).collection('data').get();
+            const snap = await firestoreDb.collection('demo_schools').doc(s.id).collection('data').get();
             let schoolBytes = 0;
             snap.forEach(function (d) {
                 let v = '';
@@ -13794,8 +13624,24 @@ async function renderCloudStorage() {
     const statusEl = document.getElementById('saCloudStatus');
     if (!sizeEl) return;
     if (!cloudAvailable || !firestoreDb) {
-        sizeEl.textContent = 'Offline';
-        if (statusEl) statusEl.textContent = '🔴 Cloud unavailable';
+        // Demo build: report how much data is stored on this device.
+        let bytes = 0;
+        try {
+            for (let i = 0; i < localStorage.length; i++) {
+                const k = localStorage.key(i);
+                if (k && k.indexOf(DEMO_STORE_PREFIX) === 0) bytes += k.length + (localStorage.getItem(k) || '').length;
+            }
+        } catch (e) {}
+        sizeEl.textContent = formatBytes(bytes);
+        if (docsEl) docsEl.textContent = Object.keys(memCache).length;
+        if (schoolsEl) schoolsEl.textContent = getSchoolRegistry().length;
+        if (lastEl) lastEl.textContent = '—';
+        if (statusEl) statusEl.textContent = '🟢 Saved locally';
+        if (el) {
+            const maxRef = 5 * 1024 * 1024; // typical localStorage quota
+            const pct = Math.max(0, Math.min(100, (bytes / maxRef) * 100));
+            el.style.setProperty('--fill', pct.toFixed(2) + '%');
+        }
         return;
     }
     sizeEl.textContent = '…';
@@ -13894,7 +13740,7 @@ async function downloadFirebaseBackup() {
         const blob = new Blob([JSON.stringify(parsed, null, 2)], { type: 'application/json' });
         const a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
-        a.download = 'SFAS_Firebase_Backup_' + new Date().toISOString().split('T')[0] + '.json';
+        a.download = 'Demo_Firebase_Backup_' + new Date().toISOString().split('T')[0] + '.json';
         a.click();
         setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
         setFirebaseBackupStatus('connected', 'Downloaded ' + count + ' entries from Firebase at ' + new Date().toLocaleTimeString() + '.');
@@ -13979,7 +13825,7 @@ const DEFAULT_FEES = {
 // ============================================================================
 
 const DEFAULT_SCHOOLS = [
-    { id: 's1', name: 'St. Francis of Assisi School', tagline: '"Pax et Bonum" - Peace and Goodness', domain: 'stfrancis.example.com', status: 'active' }
+    { id: 's1', name: 'Demo School', tagline: '"Pax et Bonum" - Peace and Goodness', domain: 'yourschool.example.com', status: 'active' }
 ];
 
 const GLOBAL_KEYS = [
@@ -14049,6 +13895,29 @@ function defaultSchoolSettings() {
 
 const memCache = {};
 
+// ============================================================================
+// DEMO LOCAL STORAGE  (no Firebase)
+// All data lives in the browser's localStorage under the "demoStore::" prefix.
+// ============================================================================
+const DEMO_STORE_PREFIX = 'demoStore::';
+function demoLocalSet(cacheKey, data) {
+    try { localStorage.setItem(DEMO_STORE_PREFIX + cacheKey, JSON.stringify(data)); } catch (e) { console.warn('localStorage write failed', cacheKey, e); }
+}
+function demoLocalDel(cacheKey) {
+    try { localStorage.removeItem(DEMO_STORE_PREFIX + cacheKey); } catch (e) {}
+}
+function demoLocalLoad() {
+    try {
+        for (let i = 0; i < localStorage.length; i++) {
+            const full = localStorage.key(i);
+            if (!full || full.indexOf(DEMO_STORE_PREFIX) !== 0) continue;
+            const cacheKey = full.slice(DEMO_STORE_PREFIX.length);
+            try { memCache[cacheKey] = JSON.parse(localStorage.getItem(full)); } catch (e) {}
+        }
+    } catch (e) {}
+}
+demoLocalLoad();
+
 const Storage = {
     scope: (key) => {
         if (GLOBAL_KEYS.includes(key)) return key;
@@ -14061,18 +13930,23 @@ const Storage = {
         return defaultVal;
     },
     set: (key, data) => {
-        memCache[Storage.scope(key)] = data;
-        cloudWrite(key, data);
+        const cacheKey = Storage.scope(key);
+        memCache[cacheKey] = data;
+        demoLocalSet(cacheKey, data);
     },
     setLocal: (key, data) => {
-        memCache[Storage.scope(key)] = data;
+        const cacheKey = Storage.scope(key);
+        memCache[cacheKey] = data;
+        demoLocalSet(cacheKey, data);
     },
     remove: (key) => {
-        delete memCache[Storage.scope(key)];
-        cloudRemove(key);
+        const cacheKey = Storage.scope(key);
+        delete memCache[cacheKey];
+        demoLocalDel(cacheKey);
     },
     cacheSet: (cacheKey, data) => {
         memCache[cacheKey] = data;
+        demoLocalSet(cacheKey, data);
     },
     cacheGet: (cacheKey, defaultVal) => {
         return Object.prototype.hasOwnProperty.call(memCache, cacheKey) ? memCache[cacheKey] ?? defaultVal : defaultVal;
@@ -14088,6 +13962,244 @@ function escapeHtml(str) {
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#39;');
 }
+
+// Demo/branding helper: always reflects the current school name so every
+// generated receipt, marksheet and report can be shown to any school.
+function schoolBrandName() {
+    return (typeof State !== 'undefined' && State && State.schoolSettings && State.schoolSettings.schoolName) || 'Demo School';
+}
+
+// ============================================================================
+// DEMO SEED DATA  (localStorage only — no server)
+// On first run this fills the local database with a realistic demo school:
+// teachers, students, attendance, marks, homework, teacher performance,
+// fees, notices, meetings and support staff. It never overwrites later edits.
+// ============================================================================
+function seedDemoData() {
+    const SEED_MARKER = DEMO_STORE_PREFIX + 'demoSeedV1';
+    try { if (localStorage.getItem(SEED_MARKER)) return; } catch (e) { return; }
+
+    const SY = 2026;
+    const pad3 = (n) => String(n).padStart(3, "0");
+    const prand = (seed) => { const x = Math.abs(Math.sin(seed) * 10000.0); return x - Math.floor(x); };
+    const pick = (seed, min, max) => min + Math.floor(prand(seed) * (max - min + 1));
+
+    // ---------- Subjects / exam settings / permissions / fee tables ----------
+    Storage.set("sfaSubjects", SUBJECTS.slice());
+    Storage.set("sfaMarkSettings", { ut1Full:25, ut1Pass:9, ut2Full:25, ut2Pass:9, hyFull:100, hyPass:25, anFull:100, anPass:33 });
+    Storage.set("sfaMarkPermissions", {
+        ut1: { enabled:true, deadline:"2027-03-31", locked:false, approved:false, published:false },
+        ut2: { enabled:true, deadline:"2027-03-31", locked:false, approved:false, published:false },
+        hy:  { enabled:true, deadline:"2027-03-31", locked:false, approved:false, published:false },
+        an:  { enabled:true, deadline:"2027-03-31", locked:false, approved:false, published:false }
+    });
+    Storage.set("sfaAdmissionFees", JSON.parse(JSON.stringify(DEFAULT_FEES)));
+    Storage.set("sfaReAdmissionFees", JSON.parse(JSON.stringify(DEFAULT_FEES)));
+    Storage.set("sfaIdCardSettings", { bg:"", showPhoto:true, showId:true, showClass:true, showExtra:true, showContact:true, photoShape:"rounded", templateId:"" });
+
+    // ---------- School profile ----------
+    Storage.set("sfaSchoolSettings", {
+        schoolName: "Demo School",
+        tagline: "\"Pax et Bonum\" - Peace and Goodness",
+        logo: "", appIcon: "", loginBg: "",
+        principalPhoto: "", accountantPhoto: "",
+        notificationEnabled: true,
+        notificationMessage: "Parent-Teacher Meeting on 25th September 2026 at 10:00 AM.",
+        address: "123 Education Lane, Knowledge City, 400001",
+        phone: "+91-9876543210",
+        email: "info@yourschool.edu",
+        principalName: "Fr. Michael Rodrigues",
+        accountantName: "Mr. Thomas Matthew",
+        academicYear: "2026-2027",
+        mission: "To provide quality education with moral values.",
+        allowTeacherPhoto: true,
+        accountantSupportStaff: false,
+        accountantAdmissions: false,
+        accountantNewAdmission: true,
+        accountantGeneralAdmission: true,
+        religions: DEFAULT_RELIGIONS
+    });
+
+    // ---------- Logins ----------
+    Storage.set("sfaPrincipalAuth", { email:"principal@yourschool.edu", password:"admin123", enabled:true });
+    Storage.set("sfaAccountantAuth", { email:"accounts@yourschool.edu", password:"account123", enabled:true });
+    Storage.set("sfaSuperAdminAuth", { email:"superadmin@yourschool.edu", password:"superadmin123", enabled:true });
+
+    // ---------- Teachers ----------
+    const teachers = [
+        { id:1001, employeeId:"TCH-2026-001", name:"Mrs. Anita Sharma", gender:"Female", dob:"1985-06-12", fatherName:"Mr. Rakesh Sharma", email:"anita.sharma@yourschool.edu", phone:"9876500011", designation:"Senior Teacher", subject:"Mathematics", subjects:["Grade 1:Mathematics","Grade 5:Mathematics","Grade 8:Mathematics"], qualification:"M.Sc., B.Ed.", experience:8, address:"12 Rose Villa, Knowledge City", classTeacher:"Grade 1 - A", section:"A", status:"Active", photo:"", hasPhoto:false, certificate:"", certificateName:"", password:"teacher123", enabled:true },
+        { id:1002, employeeId:"TCH-2026-002", name:"Mr. David Fernandes", gender:"Male", dob:"1988-02-20", fatherName:"Mr. Paul Fernandes", email:"david.fernandes@yourschool.edu", phone:"9876500022", designation:"Teacher", subject:"Science", subjects:["Grade 1:Science","Grade 5:Science","Grade 8:Science"], qualification:"M.Sc., B.Ed.", experience:5, address:"45 Green Park, Knowledge City", classTeacher:"Grade 5 - A", section:"A", status:"Active", photo:"", hasPhoto:false, certificate:"", certificateName:"", password:"teacher123", enabled:true },
+        { id:1003, employeeId:"TCH-2026-003", name:"Ms. Priya Nair", gender:"Female", dob:"1990-11-03", fatherName:"Mr. Ramesh Nair", email:"priya.nair@yourschool.edu", phone:"9876500033", designation:"Teacher", subject:"English", subjects:["Grade 1:English","Grade 5:English","Grade 8:English"], qualification:"M.A., B.Ed.", experience:6, address:"7 Lake View, Knowledge City", classTeacher:"Grade 8 - A", section:"A", status:"Active", photo:"", hasPhoto:false, certificate:"", certificateName:"", password:"teacher123", enabled:true },
+        { id:1004, employeeId:"TCH-2026-004", name:"Mr. Suresh Patil", gender:"Male", dob:"1992-07-15", fatherName:"Mr. Dinesh Patil", email:"suresh.patil@yourschool.edu", phone:"9876500044", designation:"Assistant Teacher", subject:"Social Studies", subjects:["Grade 5:Social Studies","Grade 8:Social Studies"], qualification:"M.A., B.Ed.", experience:3, address:"22 Hill Road, Knowledge City", classTeacher:"", section:"", status:"Active", photo:"", hasPhoto:false, certificate:"", certificateName:"", password:"teacher123", enabled:true },
+        { id:1005, employeeId:"TCH-2026-005", name:"Mrs. Fatima Khan", gender:"Female", dob:"1987-09-28", fatherName:"Mr. Imran Khan", email:"fatima.khan@yourschool.edu", phone:"9876500055", designation:"Teacher", subject:"Hindi", subjects:["Grade 1:Hindi","Grade 5:Hindi"], qualification:"M.A., B.Ed.", experience:7, address:"9 Garden Avenue, Knowledge City", classTeacher:"Grade 1 - B", section:"B", status:"Active", photo:"", hasPhoto:false, certificate:"", certificateName:"", password:"teacher123", enabled:true }
+    ];
+    Storage.set("sfaTeachers", teachers);
+
+    // ---------- Students ----------
+    const studentDefs = [
+        ["Aarav Mehta","Male","2019-04-12","Grade 1","A","Rajesh Mehta","Sunita Mehta","9876510001","Christian","B+","Mumbai"],
+        ["Aisha Sheikh","Female","2019-06-25","Grade 1","A","Imran Sheikh","Nadia Sheikh","9876510002","Muslim","O+","Pune"],
+        ["Kevin D'Souza","Male","2019-01-08","Grade 1","A","Joseph D'Souza","Mary D'Souza","9876510003","Christian","A+","Mumbai"],
+        ["Sneha Iyer","Female","2019-09-17","Grade 1","A","Ravi Iyer","Lakshmi Iyer","9876510004","Hindu","B+","Chennai"],
+        ["Arjun Reddy","Male","2019-03-30","Grade 1","A","Srinivas Reddy","Anitha Reddy","9876510005","Hindu","O-","Hyderabad"],
+        ["Diya Kapoor","Female","2019-07-21","Grade 1","B","Vikram Kapoor","Neha Kapoor","9876510006","Hindu","AB+","Delhi"],
+        ["Nikhil Rao","Male","2019-11-05","Grade 1","B","Manoj Rao","Deepa Rao","9876510007","Hindu","B-","Bengaluru"],
+        ["Zara Ansari","Female","2019-02-14","Grade 1","B","Faizan Ansari","Rukhsana Ansari","9876510008","Muslim","O+","Lucknow"],
+        ["Aditya Menon","Male","2015-05-19","Grade 5","A","Hari Menon","Geeta Menon","9876510009","Hindu","A+","Kochi"],
+        ["Ananya Gupta","Female","2015-08-23","Grade 5","A","Rohit Gupta","Pooja Gupta","9876510010","Hindu","B+","Kolkata"],
+        ["Samuel Thomas","Male","2015-12-01","Grade 5","A","George Thomas","Elsy Thomas","9876510011","Christian","O+","Mumbai"],
+        ["Ishita Verma","Female","2015-03-11","Grade 5","A","Alok Verma","Ritu Verma","9876510012","Hindu","AB+","Jaipur"],
+        ["Riya Pillai","Female","2012-06-27","Grade 8","A","Suresh Pillai","Meena Pillai","9876510013","Hindu","B+","Chennai"],
+        ["Daniel Pinto","Male","2012-09-09","Grade 8","A","Antony Pinto","Rosy Pinto","9876510014","Christian","O+","Goa"],
+        ["Kavya Joshi","Female","2012-01-16","Grade 8","A","Prakash Joshi","Smita Joshi","9876510015","Hindu","A+","Pune"],
+        ["Mohammed Faisal","Male","2012-04-04","Grade 8","A","Abdul Faisal","Shabana Faisal","9876510016","Muslim","B+","Hyderabad"]
+    ];
+    const students = studentDefs.map((d, i) => ({
+        id: 2001 + i,
+        admissionNo: "ADM-" + SY + "-" + pad3(i + 1),
+        name: d[0], gender: d[1], dob: d[2], class: d[3], section: d[4],
+        fatherName: d[5], motherName: d[6], parentPhone: d[7], religion: d[8],
+        bloodGroup: d[9], placeOfBirth: d[10],
+        address: "Knowledge City", photo: "", status: "Active", enabled: true,
+        createdDate: "2026-06-01"
+    }));
+    Storage.set("sfaStudents", students);
+
+    // ---------- School days (last 12 weekdays ending 2026-09-18) ----------
+    function lastSchoolDays(n, end) {
+        const out = [];
+        const d = new Date(end + "T00:00:00");
+        while (out.length < n) {
+            const dow = d.getDay();
+            if (dow !== 0 && dow !== 6) out.push(d.toISOString().split("T")[0]);
+            d.setDate(d.getDate() - 1);
+        }
+        return out.reverse();
+    }
+    const attDays = lastSchoolDays(12, "2026-09-18");
+
+    // ---------- Student attendance ----------
+    const studentAttendance = [];
+    students.forEach((s, si) => {
+        attDays.forEach((day, di) => {
+            let status = "present";
+            const p = (si * 7 + di * 3) % 29;
+            if (p === 0) status = "absent";
+            else if (p === 5) status = "leave";
+            studentAttendance.push({ studentId: s.id, studentName: s.name, status: status, date: day, class: s.class, section: s.section });
+        });
+    });
+    Storage.set("sfaStudentAttendance", studentAttendance);
+
+    // ---------- Teacher attendance ----------
+    const teacherAttendance = [];
+    teachers.forEach((t, ti) => {
+        attDays.forEach((day, di) => {
+            const status = ((ti * 5 + di) % 37 === 0) ? "leave" : "present";
+            teacherAttendance.push({ teacherId: t.id, status: status, date: day, markedAt: day + "T09:05:00.000Z" });
+        });
+    });
+    Storage.set("sfaTeacherAttendance", teacherAttendance);
+
+    // ---------- Marks for all exams & subjects ----------
+    const examFull = { ut1:25, ut2:25, hy:100, an:100 };
+    const markFloor = { ut1:13, ut2:13, hy:40, an:45 };
+    const marks = {};
+    students.forEach((s, si) => {
+        Object.keys(examFull).forEach((exam, ei) => {
+            const rec = {};
+            SUBJECTS.forEach((sub, bi) => {
+                rec[sub] = pick((si + 1) * 3.1 + (ei + 1) * 7.7 + (bi + 1) * 13.3, markFloor[exam], examFull[exam]);
+            });
+            marks[exam + "_" + s.id] = rec;
+        });
+    });
+    Storage.set("sfaMarks", marks);
+
+    // ---------- Homework ----------
+    const hwDefs = [
+        { t:1001, subject:"Mathematics", cls:"Grade 1", sec:"A", title:"Numbers 1 to 100", desc:"Write numbers 1 to 100 in the maths notebook.", inst:"Neat handwriting, one line each.", due:"2026-09-21", pr:"Medium" },
+        { t:1002, subject:"Science", cls:"Grade 1", sec:"A", title:"My Body Parts", desc:"Draw and label five body parts.", inst:"Use colour pencils.", due:"2026-09-22", pr:"Low" },
+        { t:1003, subject:"English", cls:"Grade 1", sec:"B", title:"Alphabet Writing", desc:"Write capital and small A to Z.", inst:"Two lines each.", due:"2026-09-21", pr:"Medium" },
+        { t:1001, subject:"Mathematics", cls:"Grade 5", sec:"A", title:"Fractions Worksheet", desc:"Solve the worksheet on equivalent fractions.", inst:"Show all working.", due:"2026-09-23", pr:"High" },
+        { t:1002, subject:"Science", cls:"Grade 5", sec:"A", title:"Plant Life Cycle", desc:"Draw the life cycle of a plant and explain in 5 lines.", inst:"Label each stage.", due:"2026-09-24", pr:"Medium" },
+        { t:1003, subject:"English", cls:"Grade 5", sec:"A", title:"Essay: My School", desc:"Write a 150-word essay about your school.", inst:"Use paragraphs.", due:"2026-09-22", pr:"Medium" },
+        { t:1004, subject:"Social Studies", cls:"Grade 8", sec:"A", title:"Indian Constitution", desc:"List the Fundamental Rights with one example each.", inst:"Neatly in the civics notebook.", due:"2026-09-25", pr:"High" },
+        { t:1002, subject:"Science", cls:"Grade 8", sec:"A", title:"Chemical Reactions", desc:"Balance the given 10 equations.", inst:"Write the steps for each.", due:"2026-09-23", pr:"High" },
+        { t:1003, subject:"English", cls:"Grade 8", sec:"A", title:"Letter to the Editor", desc:"Write a letter about the need for a clean neighbourhood.", inst:"Follow formal letter format.", due:"2026-09-24", pr:"Medium" },
+        { t:1005, subject:"Hindi", cls:"Grade 1", sec:"B", title:"Nibandh Lekhan", desc:"Mera Priya Pakshi par 10 vakya likhiye.", inst:"Sundar lekh likhiye.", due:"2026-09-25", pr:"Low" }
+    ];
+    const homework = hwDefs.map((h, i) => {
+        const teacher = teachers.find(t => t.id === h.t) || teachers[0];
+        return {
+            id: 4001 + i, teacherId: teacher.id, teacherName: teacher.name,
+            subject: h.subject, class: h.cls, section: h.sec,
+            title: h.title, description: h.desc, instructions: h.inst,
+            dueDate: h.due, priority: h.pr, status: "Active",
+            attachments: [], views: 0, createdDate: "2026-09-15"
+        };
+    });
+    const homeworkViews = [];
+    const homeworkStatus = [];
+    homework.forEach((h, hi) => {
+        const classStudents = students.filter(s => s.class === h.class && s.section === h.section);
+        classStudents.forEach((s, si) => {
+            homeworkViews.push({ homeworkId: h.id, studentId: s.id, viewedDate: attDays[Math.min(attDays.length - 1, 4 + (si % 5))] });
+            homeworkStatus.push({ homeworkId: h.id, studentId: s.id, status: ((hi + si) % 5 === 0) ? "notdone" : "done", date: "2026-09-17T10:00:00.000Z" });
+        });
+        h.views = classStudents.length;
+    });
+    Storage.set("sfaHomework", homework);
+    Storage.set("sfaHomeworkViews", homeworkViews);
+    Storage.set("sfaHomeworkStatus", homeworkStatus);
+
+    // ---------- Fee receipts ----------
+    const feeMonths = ["April 2026", "May 2026", "June 2026", "July 2026"];
+    const feeModes = ["Cash", "UPI", "Cheque", "Card"];
+    const feeRecords = [];
+    for (let i = 0; i < 12; i++) {
+        const s = students[i];
+        const amt = 2000 + (i % 4) * 250;
+        feeRecords.push({
+            id: 5001 + i, receiptNo: "RCP-" + SY + "-" + pad3(i + 1),
+            studentId: s.id, studentName: s.name, admissionNo: s.admissionNo,
+            class: s.class, section: s.section,
+            category: "Tuition Fee (Monthly)", amount: amt, total: amt,
+            feeMonth: feeMonths[i % feeMonths.length],
+            method: feeModes[i % feeModes.length], date: attDays[i % attDays.length],
+            transactionId: "", collectedBy: "Mr. Thomas Matthew"
+        });
+    }
+    Storage.set("sfaFees", feeRecords);
+
+    // ---------- Notices ----------
+    Storage.set("sfaNotices", [
+        { id:6001, title:"Parent-Teacher Meeting", message:"PTM for all classes on 25th September 2026 from 10:00 AM to 1:00 PM.", type:"Important", for:"All", date:"2026-09-15", createdBy:"Principal" },
+        { id:6002, title:"Annual Sports Day", message:"Sports Day rehearsals begin next week. Students should bring their sports uniform.", type:"General", for:"Students Only", date:"2026-09-12", createdBy:"Principal" },
+        { id:6003, title:"Staff Meeting", message:"All teachers are requested to submit lesson plans by Friday.", type:"Urgent", for:"Teachers Only", date:"2026-09-10", createdBy:"Principal" },
+        { id:6004, title:"Fee Reminder", message:"Kindly clear the pending tuition fees for the current quarter.", type:"Important", for:"All", date:"2026-09-08", createdBy:"Accountant" }
+    ]);
+
+    // ---------- Meetings ----------
+    Storage.set("sfaMeetings", [
+        { id:7001, title:"Staff Meeting", topic:"Half-yearly results and PTM planning", createdBy:"Principal", createdAt: 1789000000000, scheduledAt:"2026-09-20T09:00:00.000Z", messages:[ { sender:"Principal", text:"Please review the marksheets before the meeting.", time: 1789000100000 } ] },
+        { id:7002, title:"Examination Committee", topic:"Annual exam paper setting", createdBy:"Principal", createdAt: 1789100000000, scheduledAt:"2026-09-27T10:30:00.000Z", messages:[] }
+    ]);
+
+    // ---------- Support staff ----------
+    Storage.set("sfaSupportStaff", [
+        { id:8001, staffId:"STF-2026-001", name:"Mr. Ganesh Pawar", designation:"Clerk", mobile:"9876520001", fatherName:"Mr. Balu Pawar", address:"Knowledge City", photo:"", hasPhoto:false, status:"Active", addedOn:"2026-06-10T09:00:00.000Z" },
+        { id:8002, staffId:"STF-2026-002", name:"Mrs. Lata More", designation:"Librarian", mobile:"9876520002", fatherName:"Mr. Shankar More", address:"Knowledge City", photo:"", hasPhoto:false, status:"Active", addedOn:"2026-06-11T09:00:00.000Z" }
+    ]);
+
+    // ---------- Registry / current school ----------
+    Storage.cacheSet("sfaSchoolRegistry", DEFAULT_SCHOOLS);
+    Storage.cacheSet("sfaCurrentSchoolId", "s1");
+
+    try { localStorage.setItem(SEED_MARKER, "1"); } catch (e) {}
+    console.log("🧪 Demo data seeded into localStorage");
+}
+try { seedDemoData(); } catch (e) { console.error("seedDemoData failed:", e); }
 
 // ============================================================================
 // STATE
@@ -14113,7 +14225,7 @@ const State = {
     generalApplications: Storage.get('sfageneralApplications', []),
     currentUser: null,
     schoolSettings: Storage.get('sfaSchoolSettings', {
-        schoolName: 'St. Francis of Assisi School',
+        schoolName: 'Demo School',
         tagline: '"Pax et Bonum" - Peace and Goodness',
         logo: '',
         appIcon: '',
@@ -14122,7 +14234,7 @@ const State = {
         notificationMessage: '',
         address: '123 Education Lane, Knowledge City',
         phone: '+91-9876543210',
-        email: 'info@stfrancis.edu',
+        email: 'info@yourschool.edu',
         principalName: 'Fr. Michael Rodrigues',
         academicYear: '2026-2027',
         mission: 'To provide quality education with moral values.',
@@ -14746,8 +14858,8 @@ function buildAppManifest() {
         ];
     }
     const manifest = {
-        name: s.schoolName || 'St. Francis of Assisi School',
-        short_name: (s.schoolName || 'St. Francis of Assisi School').slice(0, 12),
+        name: s.schoolName || 'Demo School',
+        short_name: (s.schoolName || 'Demo School').slice(0, 12),
         description: 'Complete School Management System',
         start_url: './index.html',
         scope: '.',
@@ -14827,7 +14939,7 @@ function removeLoginBackground() {
 function resetToDefaultSettings() {
     if (!confirm('Reset all school settings to defaults? This cannot be undone.')) return;
     const defaults = {
-        schoolName: 'St. Francis of Assisi School',
+        schoolName: 'Demo School',
         tagline: '"Pax et Bonum" - Peace and Goodness',
         logo: '',
         appIcon: '',
@@ -14836,7 +14948,7 @@ function resetToDefaultSettings() {
         notificationMessage: '',
         address: '123 Education Lane, Knowledge City',
         phone: '+91-9876543210',
-        email: 'info@stfrancis.edu',
+        email: 'info@yourschool.edu',
         principalName: 'Fr. Michael Rodrigues',
         academicYear: '2026-2027',
         mission: 'To provide quality education with moral values.',
@@ -14893,6 +15005,9 @@ function applySchoolSettings() {
         const lastWord = parts.pop() || 'School';
         brandEl.innerHTML = escapeHtml(parts.join(' ')) + '<small>' + escapeHtml(lastWord) + '</small>';
     }
+    document.title = (s.schoolName || 'Demo School') + ' - Complete System';
+    const bootTitleEl = document.getElementById('bootOverlayTitle');
+    if (bootTitleEl) bootTitleEl.textContent = s.schoolName || 'Demo School';
     let appIcon = null;
     try { appIcon = s.appIcon ? JSON.parse(s.appIcon) : null; } catch(e) { appIcon = null; }
     const favicon = document.getElementById('appFavicon');
@@ -14957,9 +15072,9 @@ function loadSchoolSettings() {
     document.getElementById('setAddress').value = s.address || '';
     document.getElementById('setPhone').value = s.phone || '';
     document.getElementById('setEmail').value = s.email || '';
-    const principalAuth = Storage.get('sfaPrincipalAuth', { email: 'principal@stfrancis.edu', password: 'admin123' });
+    const principalAuth = Storage.get('sfaPrincipalAuth', { email: 'principal@yourschool.edu', password: 'admin123' });
     const curIdInput = document.getElementById('setPrincipalCurrentId');
-    if (curIdInput) curIdInput.value = principalAuth.email || 'principal@stfrancis.edu';
+    if (curIdInput) curIdInput.value = principalAuth.email || 'principal@yourschool.edu';
     document.getElementById('setMission').value = s.mission || '';
     document.getElementById('setNotificationEnabled').checked = s.notificationEnabled || false;
     document.getElementById('setNotificationMessage').value = s.notificationMessage || '';
@@ -15056,7 +15171,7 @@ function loadSchoolSettings() {
 
 function saveSchoolSettings() {
     const s = {
-        schoolName: document.getElementById('setSchoolName').value.trim() || 'St. Francis of Assisi School',
+        schoolName: document.getElementById('setSchoolName').value.trim() || 'Demo School',
         tagline: document.getElementById('setTagline').value.trim(),
         logo: document.getElementById('setLogoData').value || '',
         principalPhoto: document.getElementById('setPrincipalPhotoData') ? document.getElementById('setPrincipalPhotoData').value : (State.schoolSettings && State.schoolSettings.principalPhoto) || '',
@@ -15128,7 +15243,7 @@ function savePrincipalCredentials() {
     }
 
     const existing = Storage.get('sfaPrincipalAuth', {});
-    Storage.set('sfaPrincipalAuth', { email: existing.email || 'principal@stfrancis.edu', password: newPwd, enabled: existing.enabled !== false });
+    Storage.set('sfaPrincipalAuth', { email: existing.email || 'principal@yourschool.edu', password: newPwd, enabled: existing.enabled !== false });
     document.getElementById('setPrincipalNewPassword').value = '';
     document.getElementById('setPrincipalConfirmPassword').value = '';
     showToast('🔐 Principal password updated!', 'success');
@@ -15136,10 +15251,10 @@ function savePrincipalCredentials() {
 }
 
 function loadAccountantSettings() {
-    const aa = Storage.get('sfaAccountantAuth', { email: 'accounts@stfrancis.edu', password: 'account123' });
+    const aa = Storage.get('sfaAccountantAuth', { email: 'accounts@yourschool.edu', password: 'account123' });
     const s = State.schoolSettings || Storage.get('sfaSchoolSettings', {});
     document.getElementById('acMyName').value = s.accountantName || '';
-    document.getElementById('acCurrentId').value = aa.email || 'accounts@stfrancis.edu';
+    document.getElementById('acCurrentId').value = aa.email || 'accounts@yourschool.edu';
     document.getElementById('acNewPwd').value = '';
     document.getElementById('acConfirmPwd').value = '';
     document.getElementById('acMsg').textContent = '';
@@ -15165,7 +15280,7 @@ function saveAccountantCredentials() {
 
     if (newPwd) {
         const existing = Storage.get('sfaAccountantAuth', {});
-        Storage.set('sfaAccountantAuth', { email: existing.email || 'accounts@stfrancis.edu', password: newPwd, enabled: existing.enabled !== false });
+        Storage.set('sfaAccountantAuth', { email: existing.email || 'accounts@yourschool.edu', password: newPwd, enabled: existing.enabled !== false });
     }
 
     if (nameVal) {
@@ -15207,7 +15322,7 @@ async function computePlatformTotals() {
         for (const s of reg) {
             if (!s || !s.id) continue;
             try {
-                const snap = await firestoreDb.collection('schools').doc(s.id).collection('data').get();
+                const snap = await firestoreDb.collection('demo_schools').doc(s.id).collection('data').get();
                 snap.forEach(function (d) {
                     const v = d.data();
                     if (!v || v.data === undefined) return;
@@ -15267,7 +15382,7 @@ function loadSuperDashboard() {
 
     const s = State.schoolSettings;
     document.getElementById('saSystemStatus').innerHTML = `
-        <div class="sa-status-row"><span>🏫 School</span><strong>${escapeHtml(s.schoolName || 'St. Francis of Assisi School')}</strong></div>
+        <div class="sa-status-row"><span>🏫 School</span><strong>${escapeHtml(s.schoolName || 'Demo School')}</strong></div>
         <div class="sa-status-row"><span>📅 Academic Year</span><strong>${escapeHtml(s.academicYear || '2026-2027')}</strong></div>
         <div class="sa-status-row"><span>👑 Principal</span><strong>${escapeHtml(s.principalName || 'N/A')}</strong></div>
         <div class="sa-status-row"><span>🗄️ Data Storage</span><strong>☁️ Firebase (cloud)</strong></div>
@@ -15278,9 +15393,9 @@ function loadSuperDashboard() {
     const aa = Storage.get('sfaAccountantAuth', {});
     const sa = Storage.get('sfaSuperAdminAuth', {});
     document.getElementById('saUserList').innerHTML = `
-        <div class="sa-user-row"><span>👑 Principal</span><strong>${escapeHtml(pa.email || 'principal@stfrancis.edu')}</strong></div>
-        <div class="sa-user-row"><span>💰 Accountant</span><strong>${escapeHtml(aa.email || 'accounts@stfrancis.edu')}</strong></div>
-        <div class="sa-user-row"><span>🛡️ Admin</span><strong>${escapeHtml(sa.email || 'superadmin@stfrancis.edu')}</strong></div>
+        <div class="sa-user-row"><span>👑 Principal</span><strong>${escapeHtml(pa.email || 'principal@yourschool.edu')}</strong></div>
+        <div class="sa-user-row"><span>💰 Accountant</span><strong>${escapeHtml(aa.email || 'accounts@yourschool.edu')}</strong></div>
+        <div class="sa-user-row"><span>🛡️ Admin</span><strong>${escapeHtml(sa.email || 'superadmin@yourschool.edu')}</strong></div>
         <div class="sa-user-row"><span>👨‍🏫 Teachers</span><strong>${teachers} accounts</strong></div>
         <div class="sa-user-row"><span>🎒 Students</span><strong>${students} accounts</strong></div>
     `;
@@ -15301,15 +15416,15 @@ function loadSuperDashboard() {
 }
 
 function loadAdminCreds() {
-    const pa = Storage.get('sfaPrincipalAuth', { email: 'principal@stfrancis.edu', password: 'admin123' });
-    const aa = Storage.get('sfaAccountantAuth', { email: 'accounts@stfrancis.edu', password: 'account123' });
-    const sa = Storage.get('sfaSuperAdminAuth', { email: 'superadmin@stfrancis.edu', password: 'superadmin123' });
+    const pa = Storage.get('sfaPrincipalAuth', { email: 'principal@yourschool.edu', password: 'admin123' });
+    const aa = Storage.get('sfaAccountantAuth', { email: 'accounts@yourschool.edu', password: 'account123' });
+    const sa = Storage.get('sfaSuperAdminAuth', { email: 'superadmin@yourschool.edu', password: 'superadmin123' });
     const schoolSettings = Storage.get('sfaSchoolSettings', {});
     document.getElementById('saPrincipalName').value = schoolSettings.principalName || '';
     document.getElementById('saAccountantName').value = schoolSettings.accountantName || '';
-    document.getElementById('saPrincipalCurrent').value = pa.email || 'principal@stfrancis.edu';
-    document.getElementById('saAccountantCurrent').value = aa.email || 'accounts@stfrancis.edu';
-    document.getElementById('saSuperCurrent').value = sa.email || 'superadmin@stfrancis.edu';
+    document.getElementById('saPrincipalCurrent').value = pa.email || 'principal@yourschool.edu';
+    document.getElementById('saAccountantCurrent').value = aa.email || 'accounts@yourschool.edu';
+    document.getElementById('saSuperCurrent').value = sa.email || 'superadmin@yourschool.edu';
     document.getElementById('saPrincipalNewId').value = '';
     document.getElementById('saPrincipalNewPwd').value = '';
     document.getElementById('saAccountantNewId').value = '';
@@ -15384,7 +15499,7 @@ async function schoolGet(schoolId, key, defaultVal) {
     if (schoolId === getCurrentSchoolId()) return Storage.get(key, defaultVal);
     if (cloudAvailable && firestoreDb) {
         try {
-            const doc = await firestoreDb.collection('schools').doc(schoolId).collection('data').doc(aliasCloudKeyFor(schoolId, key)).get();
+            const doc = await firestoreDb.collection('demo_schools').doc(schoolId).collection('data').doc(aliasCloudKeyFor(schoolId, key)).get();
             if (doc.exists && doc.data() && doc.data().data !== undefined) return doc.data().data;
         } catch (e) {}
     }
@@ -15398,7 +15513,7 @@ function schoolSet(schoolId, key, val) {
         return;
     }
     if (cloudAvailable && firestoreDb) {
-        firestoreDb.collection('schools').doc(schoolId).collection('data').doc(aliasCloudKeyFor(schoolId, key))
+        firestoreDb.collection('demo_schools').doc(schoolId).collection('data').doc(aliasCloudKeyFor(schoolId, key))
             .set({ data: val, updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() }, { merge: true })
             .catch(function (e) { console.warn('schoolSet write failed', schoolId, key, e); });
     }
@@ -15414,8 +15529,8 @@ async function loadUserManage() {
     }
     const schoolId = sel.value || getCurrentSchoolId();
 
-    const principal = await schoolGet(schoolId, 'sfaPrincipalAuth', { email: 'principal@stfrancis.edu', password: 'admin123', enabled: true });
-    const accountant = await schoolGet(schoolId, 'sfaAccountantAuth', { email: 'accounts@stfrancis.edu', password: 'account123', enabled: true });
+    const principal = await schoolGet(schoolId, 'sfaPrincipalAuth', { email: 'principal@yourschool.edu', password: 'admin123', enabled: true });
+    const accountant = await schoolGet(schoolId, 'sfaAccountantAuth', { email: 'accounts@yourschool.edu', password: 'account123', enabled: true });
     document.getElementById('umAdminLogins').innerHTML = `
         <div class="sa-user-row">
             <span>👑 Principal</span><strong>${escapeHtml(principal.email)}</strong>
@@ -15588,7 +15703,7 @@ function addSchool() {
     const defaults = { ...defaultSchoolSettings(), schoolName: name, tagline: tagline };
     Storage.cacheSet(id + '::sfaSchoolSettings', defaults);
     if (cloudAvailable && firestoreDb) {
-        firestoreDb.collection('schools').doc(id).collection('data').doc(aliasCloudKeyFor(id, 'sfaSchoolSettings'))
+        firestoreDb.collection('demo_schools').doc(id).collection('data').doc(aliasCloudKeyFor(id, 'sfaSchoolSettings'))
             .set({ data: defaults, updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() }, { merge: true })
             .catch(function (e) { console.warn('addSchool settings write failed:', e); });
     }
@@ -15655,7 +15770,7 @@ async function collectAllData() {
         for (const s of reg) {
             if (!s || !s.id) continue;
             try {
-                const snap = await firestoreDb.collection('schools').doc(s.id).collection('data').get();
+                const snap = await firestoreDb.collection('demo_schools').doc(s.id).collection('data').get();
                 snap.forEach(function (d) {
                     const v = d.data();
                     if (v && v.data !== undefined) data[s.id + '::' + d.id] = v.data;
@@ -15663,7 +15778,7 @@ async function collectAllData() {
             } catch (e) {}
         }
         try {
-            const psnap = await firestoreDb.collection('_platform').get();
+            const psnap = await firestoreDb.collection('_demo_platform').get();
             psnap.forEach(function (d) {
                 const v = d.data();
                 if (!v || v.data === undefined) return;
@@ -15692,7 +15807,7 @@ async function restoreAllData(payload) {
             if (sid === getCurrentSchoolId()) {
                 Storage.set(unaliasCloudKey(key), data[k]);
             } else if (cloudAvailable && firestoreDb) {
-                firestoreDb.collection('schools').doc(sid).collection('data').doc(key)
+                firestoreDb.collection('demo_schools').doc(sid).collection('data').doc(key)
                     .set({ data: data[k], updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() }, { merge: true })
                     .catch(function (e) { console.warn('restore write failed', k, e); });
             }
@@ -15732,14 +15847,14 @@ async function runCloudDiagnostic() {
         } else {
             try {
                 const sid = getCurrentSchoolId();
-                const snap = await firestoreDb.collection('schools').doc(sid).collection('data').get();
+                const snap = await firestoreDb.collection('demo_schools').doc(sid).collection('data').get();
                 const ids = snap.docs.map(d => d.id);
                 o('READ schools/' + sid + '/data: OK — ' + ids.length + ' docs: ' + (ids.join(', ') || '(none)'));
             } catch (e) {
                 o('✗ READ ERROR schools/' + sid + '/data: ' + (e && e.message));
             }
             try {
-                const testRef = firestoreDb.collection('schools').doc(getCurrentSchoolId()).collection('data').doc('__diag_' + Date.now());
+                const testRef = firestoreDb.collection('demo_schools').doc(getCurrentSchoolId()).collection('data').doc('__diag_' + Date.now());
                 await testRef.set({ data: { diag: true }, updatedAt: new Date() });
                 const got = await testRef.get();
                 let wrote = !!got.exists;
@@ -15749,7 +15864,7 @@ async function runCloudDiagnostic() {
                 o('✗ WRITE ERROR (firestore rules?): ' + (e && e.message));
             }
             try {
-                const sch = await firestoreDb.collection('schools').get();
+                const sch = await firestoreDb.collection('demo_schools').get();
                 const ids = sch.docs.map(d => d.id);
                 o('schools collection: ' + (ids.join(', ') || '(none)'));
             } catch (e) {
@@ -15913,6 +16028,7 @@ function resetAllData() {
     });
     State.students = []; State.teachers = []; State.homework = []; State.feeRecords = [];
     initDefaultData();
+    try { localStorage.removeItem(DEMO_STORE_PREFIX + 'demoSeedV1'); } catch (e) {}
     showToast('🔄 School data cleared. Reloading...', 'success');
     setTimeout(() => location.reload(), 1200);
 }
@@ -16893,21 +17009,21 @@ async function doLogin() {
             key: 'sfaSuperAdminAuth', 
             type: 'superadmin', 
             name: 'Super Admin', 
-            default: { email: 'superadmin@stfrancis.edu', password: 'superadmin123' },
+            default: { email: 'superadmin@yourschool.edu', password: 'superadmin123' },
             displayName: 'System Administrator'
         },
         { 
             key: 'sfaPrincipalAuth', 
             type: 'admin', 
             name: 'Principal', 
-            default: { email: 'principal@stfrancis.edu', password: 'admin123' },
+            default: { email: 'principal@yourschool.edu', password: 'admin123' },
             displayName: principalSettings.principalName || 'Fr. Michael Rodrigues'
         },
         { 
             key: 'sfaAccountantAuth', 
             type: 'accountant', 
             name: 'Accountant', 
-            default: { email: 'accounts@stfrancis.edu', password: 'account123' },
+            default: { email: 'accounts@yourschool.edu', password: 'account123' },
             displayName: principalSettings.accountantName || 'Mr. Thomas Matthew'
         }
     ];
@@ -19580,7 +19696,7 @@ function collectFeeForStudent() {
 
     document.getElementById('feeReceiptContainer').innerHTML = `
         <div style="background:white;padding:20px;border:2px dashed #E2E8F0;border-radius:12px;margin-top:16px;">
-            <div style="text-align:center;border-bottom:2px solid #F59E0B;"><h3>St. Francis of Assisi School</h3><p>Receipt #${escapeHtml(receiptNo)}</p></div>
+            <div style="text-align:center;border-bottom:2px solid #F59E0B;"><h3>${escapeHtml(schoolBrandName())}</h3><p>Receipt #${escapeHtml(receiptNo)}</p></div>
             <div class="receipt-row"><span>Student:</span><strong>${escapeHtml(student.name)}</strong></div>
             <div class="receipt-row"><span>Month:</span><span>${escapeHtml(feeMonth || 'N/A')}</span></div>
             <div class="receipt-row" style="font-weight:700;font-size:16px;border-top:2px solid #E2E8F0;padding-top:8px;"><span>Amount:</span><span style="color:#22C55E;">₹${amount.toLocaleString('en-IN')}</span></div>
@@ -20045,9 +20161,9 @@ function loadStudentMarks() {
         <div class="marksheet-container">
             <div class="marksheet-header">
                 <div class="school-logo">✝️</div>
-                <h1>St. Francis of Assisi School</h1>
-                <p class="motto">"Pax et Bonum" - Peace and Goodness</p>
-                <div class="academic-year">📅 Academic Year 2026-2027</div>
+                <h1>${escapeHtml(schoolBrandName())}</h1>
+                <p class="motto">${escapeHtml((State.schoolSettings && State.schoolSettings.tagline) || '"Pax et Bonum" - Peace and Goodness')}</p>
+                <div class="academic-year">📅 Academic Year ${escapeHtml((State.schoolSettings && State.schoolSettings.academicYear) || '2026-2027')}</div>
             </div>
 
             <div class="student-profile-card">
@@ -20185,7 +20301,7 @@ function loadStudentMarks() {
             </div>
 
             <div style="text-align:center;font-size:10px;color:var(--text-secondary);margin-top:20px;padding-top:16px;border-top:1px solid var(--border);">
-                📅 Generated on: ${new Date().toLocaleDateString()} | St. Francis of Assisi School Management System
+                📅 Generated on: ${new Date().toLocaleDateString()} | ${escapeHtml(schoolBrandName())} Management System
             </div>
         </div>
     `;
@@ -20265,7 +20381,7 @@ function shareMarkSheet() {
     if (!student) return;
     const shareText = `
         📊 Student Progress Report
-        🏫 St. Francis of Assisi School
+        🏫 ${schoolBrandName()}
         👤 ${student.name} (${student.admissionNo})
         📚 ${student.class} - Section ${student.section}
         Overall Performance: ${document.querySelector('.performance-summary .summary-item .value')?.textContent || 'N/A'}
@@ -20842,7 +20958,7 @@ function sendTeacherReminder(el) {
 function exportPerformanceReport() {
     const teachers = State.teachers;
     const homework = State.homework;
-    let report = 'St. Francis of Assisi School\nTeacher Performance Report\nGenerated: ' + new Date().toLocaleDateString() + '\n' + '='.repeat(50) + '\n\n';
+    let report = schoolBrandName() + '\nTeacher Performance Report\nGenerated: ' + new Date().toLocaleDateString() + '\n' + '='.repeat(50) + '\n\n';
     report += 'Teacher\tTotal Homework\tActive\tCompleted\tViews\tEngagement\tScore\n' + '-'.repeat(80) + '\n';
 
     teachers.forEach(t => {
@@ -21509,7 +21625,7 @@ function loadIdCardPreview() {
 }
 
 function idCardSchoolName() {
-    return (State.schoolSettings && State.schoolSettings.schoolName) || 'St. Francis of Assisi School';
+    return (State.schoolSettings && State.schoolSettings.schoolName) || 'Demo School';
 }
 
 function idCardSubName(type) {
@@ -21897,7 +22013,7 @@ window.addEventListener('error', function (ev) {
 
 populateReligionSelects();
 
-console.log('✅ St. Francis of Assisi School - Complete System');
+console.log('✅ Demo School - Complete System');
 console.log('📚 Version: 6.0 - All Features (A, B, C) Integrated');
 console.log('👥 Students:', State.students.length);
 console.log('👨‍🏫 Teachers:', State.teachers.length);
@@ -21907,17 +22023,21 @@ console.log('📚 General Applications:', State.generalApplications.length);
 </script>
 
 <script>
+// DEMO: never register a service worker, and actively remove any previously
+// installed one so a cached production app can never be served for this file.
 if ('serviceWorker' in navigator) {
-    fetch('sw.js', { method: 'HEAD' })
-        .then(res => {
-            if (res.ok) {
-                navigator.serviceWorker.register('sw.js')
-                    .then(() => console.log('✅ SW registered'))
-                    .catch(err => console.log('SW registration failed:', err));
-            }
-        })
-        .catch(() => console.log('sw.js not found, skipping registration.'));
+    navigator.serviceWorker.getRegistrations()
+        .then(regs => Promise.all(regs.map(r => r.unregister())))
+        .then(() => console.log('🧹 Demo: service workers unregistered'))
+        .catch(err => console.log('SW cleanup failed:', err));
 }
+if (window.caches && caches.keys) {
+    caches.keys()
+        .then(keys => Promise.all(keys.map(k => caches.delete(k))))
+        .then(() => console.log('🧹 Demo: caches cleared'))
+        .catch(() => {});
+}
+console.log('🧪 DEMO build running — offline mode, all data saved in localStorage');
 </script>
 </body>
 </html>
